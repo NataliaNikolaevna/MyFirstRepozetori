@@ -1,0 +1,31 @@
+Ќастройка git через SourceTree
+26.10.2013
+”становить SourceTree Client.
+ѕри запросе на установку клиента Git (заголовок окна Ц УSourceTree: Git not foundФ) нажать на кнопку УDownload an embedded version of Git for SourceTree alone to use.Ф Ц согласитьс€ на автоматическую установку.
+ѕри запросе на установку клиента Mercurial (заголовок окна Ц УSourceTree: Mercurial not foundФ) нажать на кнопку УI donТt want to use MercurialФ Ц отказатьс€ от установки клиента Mercurial.
+Ќастроить продукты:
+Full Name Ц им€ и фамили€ на латинице.
+Email address Ц адрес почты Ц логин на bitbucket.
+Allow SourceTree to modify your global Git and Mercurial config files Ц установить.
+Configure automatic line ending handling by default Ц установить.
+I agree to the SourceTree license agreement Ц установить.
+Ќажать Next.
+¬ыбрать УUse PuTTY / PlinkФ.
+Ќажать Next.
+Ќажать No.
+Finish.
+—оздать ssh-ключ дл€ доступа к репозитарию:
+Tools -> Create or Import SSH-Keys.
+¬ нижней части окна выбрать Type of key to generate Ц SSH-2 RSA.
+Ќажать Generate.
+—овершать произвольные движени€ курсора мыши внтури открывшегос€ окна до заполнени€ индикатора.
+«аполнить поле Key comment Ц УBitbucketФ.
+«аполнить пол€ Key passphrase и Confirm passphrase Ц пароль и подтверждение парол€ дл€ использовани€ закрытого ключа.
+Ќажать Save private key Ц сохранить файл в надежное место на компьютере (файл будет нужен в дальнейшем дл€ доступа к репозитари€м).
+—копировать весь текст из недоступного дл€ редактировани€ окна УPublic key for pasting into OpenSSH authorized_keys fileФ (длинна€ строка символов, котора€ начинаетс€ с Уssh-rsaФ, а в конце ее Ц У= BitbucketФ.
+ќткрыть Bitbucket, кликнуть по своему изображению в верхнем правом углу сайта, в меню выбрать УManage AccountФ. ƒолжна открытьс€ страница по адресу https://bitbucket.org/account/user/<UserName>/.
+¬ левом меню выбрать УSSH KeysФ.
+Ќажать УAdd keyФ. ”казать:
+Label Ц Bitbucket.
+Key Ц вставить строку, скопированную ранее (п. 8).
+Ќажать УAdd keyФ.
